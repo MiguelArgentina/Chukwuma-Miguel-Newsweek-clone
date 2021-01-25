@@ -1,6 +1,11 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
+} */
+footer {
+  margin-left: 2%;
+  margin-right: 2%;
+  overflow-x: hidden;
 }
 
 .header-logo {
@@ -40,23 +45,20 @@
   display: flex;
 }
 
-.flex-xs li {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 40px;
-  list-style-type: none;
-}
-
 .social-icons-footer {
   font-size: 24px;
 }
+.upper-footer-social-media {
+  position: relative;
+}
 
-.upper-footer-social-media ul {
+.upper-footer-social-media {
   /* width: 100%; */
   display: flex;
   justify-content: flex-start;
+  padding: 0;
+  position: relative;
+
   /* border: 1px solid blue; */
 }
 
