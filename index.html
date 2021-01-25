@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- FontAwesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="asset/styles/style.css" />
-    <title>Newsweek</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <main>
-      <header>
-        <div class="container">
-          <nav>
-            <div class="header-main-container align-content-center">
-              <div class="header-logo d-flex justify-content-start">
-                <img src="" alt="newsweek-logo" />
-              </div>
-              <div
-                class="header-menu d-flex align-items-center justify-content-end mr-1"
-              >
-                <div class="menu-icon">
-                  <a href="#">Link</a>
-                  <button type="button" href="#" class="btn btn-warning">
-                    Subscribe
-                  </button>
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="asset/styles/style.css" />
+  <title>Newsweek</title>
+</head>
 
-                  <i class="fa fa-bars"></i>
-                </div>
+<body>
+  <main>
+    <header>
+      <div class="header-main-container">
+        <nav class="">
+          <div class="header-sub-container d-flex justify-content-between align-content-center">
+            <div class="header-logo d-flex justify-content-start">
+              <img class="header-logo" src="asset/images/newsweek-logo.svg" alt="newsweek-logo" />
+            </div>
+            <div class="header-menu d-flex align-items-center justify-content-end mr-5">
+              <div class="menu-icon">
+                <i class="far fa-user header-user-icon"></i>
+                <button type="button" href="#" class="btn btn-warning btn-header  pb-2">
+                  Subscribe
+                </button>
+
+                <i class="fa fa-bars"></i>
               </div>
             </div>
-          </nav>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="fake-body"></div>
+    <footer>
+      <div class="main-footer-wrapper">
+        <div class="upper-footer d-flex flex-column">
+          <div class="logo-line1-wrapper">
+            <div class="logo">logo</div>
+            <div class="upper-footer-line1">line 1</div>
+          </div>
+          <div class="upper-footer-social-media">social media</div>
         </div>
-      </header>
-    </main>
-    <!-- Optional JavaScript; choose one of the two! -->
+        <div class="lower-footer d-flex flex-column flex-wrap">
+          <div class="languages">languages</div>
+          <div class="company-links">
+            <a href="" class="comp-link">link1</a>
+            <a href="" class="comp-link">link</a>
+            <a href="" class="comp-link">link</a>
+            <a href="" class="comp-link">link</a>
+            <a href="" class="comp-link">link</a>
+            <a href="" class="comp-link">link</a>
+            <a href="" class="comp-link">link</a>
+            <a href="" class="comp-link">link</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
+    </footer>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  </main>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
