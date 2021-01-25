@@ -48,9 +48,6 @@ footer {
 .social-icons-footer {
   font-size: 24px;
 }
-.upper-footer-social-media {
-  position: relative;
-}
 
 .upper-footer-social-media {
   /* width: 100%; */
@@ -72,8 +69,8 @@ footer {
   flex-basis: 75%;
 }
 
-.languages div a,
-.company-links a {
+.company-links a,
+.languages div a {
   text-decoration: none;
   color: #666;
   font-size: 14px;
