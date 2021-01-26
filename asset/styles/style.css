@@ -105,6 +105,26 @@ footer {
   height: 50vh;
 }
 
+#image-test {
+  display: flex;
+  flex-basis: 30%;
+  width: 95px;
+  height: 95px;
+}
+
+.card-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.stories-card-title {
+  font-size: 14px;
+}
+
+.stories-card-text {
+  font-size: 12px;
+}
+
 .footer-logo-copyright {
   flex-basis: 70%;
 }
