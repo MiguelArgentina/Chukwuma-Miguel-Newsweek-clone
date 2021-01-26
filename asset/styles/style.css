@@ -106,19 +106,21 @@ footer {
 }
 
 #image-test {
-  display: flex;
-  flex-basis: 30%;
   width: 95px;
   height: 95px;
 }
 
-.card-wrapper {
-  width: 100%;
-  display: flex;
+#image-test2 {
+  width: 95px;
+  height: 95px;
 }
 
 .stories-card-title {
   font-size: 14px;
+}
+
+.clearing {
+  clear: both;
 }
 
 .stories-card-text {
@@ -190,11 +192,11 @@ footer {
   margin-right: 3px;
 }
 
-
-main{
+main {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 div {
   display: block;
 }
@@ -207,7 +209,7 @@ div {
   font: bold 16px/16px "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   padding-bottom: 11px;
-  color: rgba(3, 3, 3, .4);
+  color: rgba(3, 3, 3, 0.4);
   margin-top: 20px;
 }
 
@@ -217,10 +219,9 @@ div {
   margin-bottom: 10px;
 }
 
-.card-body card-title {
+.card-body .card-title {
   font-size: 20px;
   line-height: 20px;
-
 }
 
 .card-body a {
@@ -244,7 +245,7 @@ div {
   font: bold 17px/16px "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   padding: 8px 15px 9px;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -263,3 +264,4 @@ div {
 .card-body p {
   color: #4e4c4c;
   margin-bottom: 20px;
+}
