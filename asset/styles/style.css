@@ -439,3 +439,12 @@ input[type="submit" i] {
   text-align: center;
   border: hidden;
 }
+
+.subscribe-img {
+  width: 170px;
+  height: 228px;
+}
+
+.clear-after-subscribe {
+  clear: both;
+}
