@@ -15,7 +15,7 @@ Website. This clone be must be done using the Bootstrap framework.
 
 # Live Link
 
-* [The Nexsweek Clone](https://miguelargentina.github.io/Chukwuma-Miguel-Newsweek-clone/)
+* [The Newsweek Clone](https://miguelargentina.github.io/Chukwuma-Miguel-Newsweek-clone/)
 
 # Web Page View
 
