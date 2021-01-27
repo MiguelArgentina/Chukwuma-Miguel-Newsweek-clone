@@ -77,6 +77,11 @@ footer {
   border-right: none;
 }
 
+.inline-news-img {
+  width: 95px;
+  height: 95px;
+}
+
 #search-text-icon {
   color: #333;
   font-weight: normal;
