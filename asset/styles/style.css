@@ -302,6 +302,7 @@ div {
   text-align: center;
   margin: 6px auto;
   margin-top: -15px;
+  z-index: 1;
 }
 
 .first-card {
@@ -314,6 +315,22 @@ div {
   border-bottom: 4px solid #d9d9d9;
   padding-top: 10px;
   padding-bottom: 4px;
+}
+
+.card-wrapper1 {
+  border-top: 4px solid #d9d9d9;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.card-wrapper2 {
+  border-bottom: 4px solid #d9d9d9;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.deco {
+  position: relative;
 }
 
 .deco::before {
