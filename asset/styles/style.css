@@ -127,6 +127,16 @@ footer {
   font-size: 12px;
 }
 
+.card-text {
+  font: bold 16px/19px "Roboto Condensed", sans-serif;
+  color: rgba(3, 3, 3, 0.5);
+}
+
+.card-wrapper {
+  display: flex;
+  width: 100%;
+}
+
 .footer-logo-copyright {
   flex-basis: 70%;
 }
