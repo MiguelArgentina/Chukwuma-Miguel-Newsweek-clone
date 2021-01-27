@@ -13,6 +13,10 @@ Website. This clone be must be done using the Bootstrap framework.
 * Pre processors
 * Bootstrap framework
 
+# Live Link
+
+* [The Nexsweek Clone](https://miguelargentina.github.io/Chukwuma-Miguel-Newsweek-clone/)
+
 ## Authors
 
 ### Chukwuma Obasi
