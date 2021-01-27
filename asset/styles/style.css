@@ -448,3 +448,16 @@ input[type="submit" i] {
 .clear-after-subscribe {
   clear: both;
 }
+
+.subscribe-text h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+
+.subscribe-images-wrapper {
+  flex-basis: 60%;
+}
+
+.subscribe-text {
+  flex-basis: 40%;
+}

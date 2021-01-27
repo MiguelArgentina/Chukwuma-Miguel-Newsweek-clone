@@ -1,0 +1,40 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+var sys_callback=function(a){console.log("stats counted")};function setCookie(a,e,c,b){var g="";if(c){var f=new Date;f.setTime(f.getTime()+864E5*c);f="; expires="+f.toGMTString();b&&(g=";domain="+b)}document.cookie=a+"="+e+f+g+"; path=/"}function getCookie(a){a+="=";for(var e=document.cookie.split(";"),c=0;c<e.length;c++){for(var b=e[c];" "==b.charAt(0);)b=b.substring(1,b.length);if(0==b.indexOf(a))return b.substring(a.length,b.length)}return null}
+var news_counter=function(a){var e=a.what||"",c=a.a_id||0,b=a.r_id||0,g=a.c_id||0,f=a.c_url||"",n=a.a_editor||1,p=a.c_country||"",d=a.referer||"",qq=a.device||"";if(e){d&&"0"!=d||(d=document.referrer);location.href!=d&&setCookie("orir",document.referrer,.02);!d&&getCookie("orir")&&(d=getCookie("orir"));!d&&location.search&&getUrlParameters&&"function"==typeof getUrlParameters&&getUrlParameters(location.search.substr(1));var r=getCookie("cds1")?0:1,t=getCookie("cus1")?0:1,q=getCookie("cmx1")?0:1,h=document.createElement("script");
+if(document.domain==location.host){for(var l=document.domain.split("."),m="",k=1;k<l.length;k++)m+="."+l[k];document.domain=m.substr(1)}setCookie("cds1",1,10/24,document.domain);setCookie("cus1",1,22/24,document.domain);setCookie("cmx1",1,17,document.domain);if(!a.statsurl) a.statsurl = 'https://web.archive.org/web/20210120140033/https://stats.newsweek.com';h.setAttribute("src",a.statsurl+"/counter/article?ack=sys_callback&site_id="+a.site_id+"&c_what="+e+"&a_id="+c+"&r_id="+b+"&c_id="+g+"&c_url="+f+"&referer="+encodeURIComponent(d)+"&device="+qq+"&a_editor="+n+"&c_country="+p+"&xz=5&c_uque="+r+"&c_ruque="+t+"&c_visits="+q);h.setAttribute("async",
+!0);document.body.appendChild(h)}};"undefined"!=typeof ibt_cter&&top==window&&-1<location.href.indexOf(document.domain)&&news_counter(ibt_cter);
+
+
+}
+/*
+     FILE ARCHIVED ON 14:00:33 Jan 20, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:17:59 Jan 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 522.322
+  exclusion.robots: 0.193
+  exclusion.robots.policy: 0.176
+  RedisCDXSource: 2.478
+  esindex: 0.015
+  LoadShardBlock: 171.056 (3)
+  PetaboxLoader3.datanode: 132.581 (5)
+  CDXLines.iter: 95.407 (3)
+  load_resource: 151.355 (2)
+  PetaboxLoader3.resolve: 107.379 (2)
+*/
