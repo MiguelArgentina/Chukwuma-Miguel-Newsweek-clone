@@ -1,112 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="asset/styles/style.css" />
+    <title>Newsweek</title>
+  </head>
 
-  <!-- FontAwesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-  <link rel="stylesheet" href="asset/styles/style.css" />
-  <title>Newsweek</title>
-</head>
-
-<body>
-  <header>
-    <div class="header-main-container">
-      <nav>
-        <div class="row">
-          <div class="header-sub-container d-flex justify-content-between align-content-center">
-            <div class="header-logo d-none d-lg-flex col-7 justify-content-between align-items-center">
-              <div class="date-text">Wed, Jan 20, 2021</div>
-              <img class="header-logo-lg" src="asset/images/newsweek-logo.svg" alt="newsweek-logo" />
-            </div>
-            <div class="header-logo d-flex d-lg-none justify-content-start">
-              <img class="header-logo" src="asset/images/newsweek-logo.svg" alt="newsweek-logo" />
-            </div>
-            <div class="header-menu d-flex align-items-center col-5 justify-content-end mr-5">
-              <div class="menu-icon d-flex align-items-center">
-                <a href="#" class="d-none d-md-block login-text">LOGIN</a>
-                <i class="far fa-user header-user-icon d-block d-md-none" id="header-user-icon"></i>
-                <button type="button" class="btn btn-warning btn-header pb-2">
-                  Subscribe
-                </button>
-                <i class="fa fa-bars" id="header-menu-bars"></i>
+  <body>
+    <header>
+      <div class="header-main-container">
+        <nav>
+          <div class="row">
+            <div
+              class="header-sub-container d-flex justify-content-between align-content-center"
+            >
+              <div
+                class="header-logo d-none d-lg-flex col-7 justify-content-between align-items-center"
+              >
+                <div class="date-text">Wed, Jan 20, 2021</div>
+                <img
+                  class="header-logo-lg"
+                  src="asset/images/newsweek-logo.svg"
+                  alt="newsweek-logo"
+                />
+              </div>
+              <div class="header-logo d-flex d-lg-none justify-content-start">
+                <img
+                  class="header-logo"
+                  src="asset/images/newsweek-logo.svg"
+                  alt="newsweek-logo"
+                />
+              </div>
+              <div
+                class="header-menu d-flex align-items-center col-5 justify-content-end mr-5"
+              >
+                <div class="menu-icon d-flex align-items-center">
+                  <a href="#" class="d-none d-md-block login-text">LOGIN</a>
+                  <i
+                    class="far fa-user header-user-icon d-block d-md-none"
+                    id="header-user-icon"
+                  ></i>
+                  <button type="button" class="btn btn-warning btn-header pb-2">
+                    Subscribe
+                  </button>
+                  <i class="fa fa-bars" id="header-menu-bars"></i>
+                </div>
               </div>
             </div>
           </div>
+        </nav>
+        <div
+          class="header-upper-line-links d-none d-lg-flex mt-2 py-2 justify-content-around"
+        >
+          <a href="" id="first-upper-link" class="upper-link">U.S.</a>
+          <a href="" class="upper-link">World</a>
+          <a href="" class="upper-link">Business</a>
+          <a href="" class="upper-link">Tech & Science</a>
+          <a href="" class="upper-link">Culture</a>
+          <a href="" class="upper-link">Newsgeek</a>
+          <a href="" class="upper-link">Sports</a>
+          <a href="" class="upper-link">Health</a>
+          <a href="" class="upper-link">The Debate</a>
+          <a href="" class="upper-link">Experts</a>
+          <a href="" class="upper-link">Vantage</a>
+          <a href="" class="upper-link" id="search-text-link">Search</a>
+          <a href="" class="upper-link" id="search-text-icon"
+            ><i class="fas fa-search"></i
+          ></a>
         </div>
-      </nav>
-      <div class="header-upper-line-links d-none d-lg-flex mt-2 py-2 justify-content-around">
-        <a href="" id="first-upper-link" class="upper-link">U.S.</a>
-        <a href="" class="upper-link">World</a>
-        <a href="" class="upper-link">Business</a>
-        <a href="" class="upper-link">Tech & Science</a>
-        <a href="" class="upper-link">Culture</a>
-        <a href="" class="upper-link">Newsgeek</a>
-        <a href="" class="upper-link">Sports</a>
-        <a href="" class="upper-link">Health</a>
-        <a href="" class="upper-link">The Debate</a>
-        <a href="" class="upper-link">Experts</a>
-        <a href="" class="upper-link">Vantage</a>
-        <a href="" class="upper-link" id="search-text-link">Search</a>
-        <a href="" class="upper-link" id="search-text-icon"><i class="fas fa-search"></i></a>
+        <div class="header-lower-line-links d-none d-lg-flex">
+          <a href="" id="first-lower-link" class="lower-link">Trending</a>
+          <a href="" class="lower-link">Joe Biden</a>
+          <a href="" class="lower-link">Donald Trump</a>
+          <a href="" class="lower-link">Inauguration</a>
+          <a href="" class="lower-link">Corona Virus</a>
+          <a href="" class="lower-link">Stimulus Package</a>
+          <a href="" class="lower-link">Vaccine</a>
+          <a href="" id="last-lower-link" class="lower-link">Capital Riots</a>
+        </div>
       </div>
-      <div class="header-lower-line-links d-none d-lg-flex">
-        <a href="" id="first-lower-link" class="lower-link">Trending</a>
-        <a href="" class="lower-link">Joe Biden</a>
-        <a href="" class="lower-link">Donald Trump</a>
-        <a href="" class="lower-link">Inauguration</a>
-        <a href="" class="lower-link">Corona Virus</a>
-        <a href="" class="lower-link">Stimulus Package</a>
-        <a href="" class="lower-link">Vaccine</a>
-        <a href="" id="last-lower-link" class="lower-link">Capital Riots</a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="main-container container-fluid">
-      <!-- START OF ROW CONTAINER FOR THE 3 COLUMNS -->
+    </header>
+    <main>
+      <div class="main-container container-fluid">
+        <!-- START OF ROW CONTAINER FOR THE 3 COLUMNS -->
 
-      <div class="row mb-2">
-        <!-- START OF FIRST COLUMN -->
+        <div class="row mb-2">
+          <!-- START OF FIRST COLUMN -->
 
-        <div class="featured-stories first-col col-12 col-md-5 col-lg-3">
-          <!-- START OF Featured Stories-->
+          <div class="featured-stories first-col col-12 col-md-5 col-lg-3">
+            <!-- START OF Featured Stories-->
 
-          <div class="featured-stories-wrapper">
+            <div class="featured-stories-wrapper">
+              <div class="block-title">featured stories</div>
 
-            <div class="block-title">featured stories</div>
-
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a href="/us">US</a>
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a href="/us">US</a>
+                    </div>
+                    <div class="image">
+                      <imgclass
+                        ="card-img-top"
+                        src="asset/images/featured-stories-1.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
                   </div>
-                  <div class="image">
-                    <imgclass="card-img-top" src="asset/images/featured-stories-1.jpg" alt="Card image cap" />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a href="/trump-biden-super-predator-debate-1541565">
+                        The 73 People Pardoned by Donald Trump on His Last Day
+                        As President</a
+                      >
+                    </h3>
+                    <p class="card-text">
+                      Notable people pardoned by Trump today include former
+                      White House chief strategist Steve Bannon and rapper Lil
+                      Wayne.
+                    </p>
                   </div>
                 </div>
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a href="/trump-biden-super-predator-debate-1541565">
-                      The 73 People Pardoned by Donald Trump on His Last Day
-                      As President</a>
-                  </h3>
-                  <p class="card-text">
-                    Notable people pardoned by Trump today include former
-                    White House chief strategist Steve Bannon and rapper Lil
-                    Wayne.
-                  </p>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a href="/us">POLITICS</a>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/featured-stories-2.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a href="/trump-biden-super-predator-debate-1541565">
+                        Donald Trump Can Issue Secret Pardons, but They're
+                        Risky</a
+                      >
+                    </h3>
+                    <p class="card-text">
+                      Trump chose not to issue pardons for himself of his
+                      personal attorney, former New York Mayor Rudy Giuliani.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a href="/us">EXPERTS</a>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/featured-stories-3.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a href="/trump-biden-super-predator-debate-1541565">
+                        Newsweek Announces Launch of the Newsweek Expert
+                        Forum</a
+                      >
+                    </h3>
+                    <p class="card-text">
+                      Newsweek Expert Forum creates cohort of thought leaders,
+                      pioneering thinkers to share insights, expertise from
+                      range of professions, industries.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a href="/us">POLITICS</a>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/featured-stories-4.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a href="/trump-biden-super-predator-debate-1541565">
+                        Can Joe Biden Rescind Donald Trump's Pardons?</a
+                      >
+                    </h3>
+                    <p class="card-text">
+                      The president did not issue pardons for himself, his
+                      children or for former New York Mayor Rudy Giuliani.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a href="/us">POLITICS</a>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/featured-stories-5.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <a href="/trump-biden-super-predator-debate-1541565">
+                        Joe Biden Immigration Orders Upend Donald Trump's
+                        Legacy</a
+                      >
+                    </h3>
+                    <p class="card-text">
+                      The Biden Administration will issue an order stopping
+                      construction of the border wall on its first day.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
+            <!-- Start of Sponsored Insights section-->
+            <div class="sponsored-insights-wrapper container-fluid">
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="#"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-1.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="/us"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-2.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="/us"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-3.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="/us"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-4.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END of Sponsored Insights section-->
+
+            <!-- END OF Featured Stories-->
+          </div>
+
+          <!-- END OF FIRST COLUMN -->
+
+          <!-- START OF SECOND COLUMN -->
+
+          <div class="top-story second-col col-12 col-md-7 col-lg-6">
+            <!-- START OF Top Story-->
+
+            <div class="block-title">Top story</div>
             <div class="card">
               <div class="category">
                 <div class="card">
@@ -114,1192 +420,1609 @@
                     <a href="/us">POLITICS</a>
                   </div>
                   <div class="image">
-                    <img class="card-img-top" src="asset/images/featured-stories-2.jpg" alt="Card image cap" />
+                    <img
+                      class="card-img-top"
+                      src="asset/images/top-story.jpg"
+                      alt="Card image cap"
+                    />
                   </div>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">
                     <a href="/trump-biden-super-predator-debate-1541565">
-                      Donald Trump Can Issue Secret Pardons, but They're
-                      Risky</a>
+                      Joe Biden's First Executive Actions Undo Many of Donald
+                      Trump's</a
+                    >
                   </h3>
                   <p class="card-text">
-                    Trump chose not to issue pardons for himself of his
-                    personal attorney, former New York Mayor Rudy Giuliani.
+                    Actions related to the COVID-19 crisis, climate change and
+                    racial equality are to be among the first taken as he begins
+                    his tenure.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a href="/us">EXPERTS</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/featured-stories-3.png" alt="Card image cap" />
+            <!-- END OF Top Story-->
+
+            <!-- START OF My turn and Cult&Trav-->
+
+            <div class="container-fluid">
+              <row class="row">
+                <div class="block-title">My turn</div>
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/my-turn-1.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        I Married My Best Friend to Avoid Inheritance Tax
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body">
-                  <h3 class="card-title">
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/my-turn-2.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        I've Rescued Hundreds of Special Needs Dogs
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/my-turn-3.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Why I Accepted Trump's Medal Of Arts
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </row>
+              <row class="row">
+                <div class="block-title">Culture and Travel</div>
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/cult-travel-1.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        The Secrets to Happiness Around the World
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/cult-travel-2.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Where We Are Dreaming of Traveling in 2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/cult-travel-3.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        These Are the Top 100 Songs of 2020
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </row>
+            </div>
+
+            <!-- END OF My turn and Cult&Trav-->
+
+            <!-- START OF More Stories-->
+
+            <div class="container-fluid" id="more-stories">
+              <div class="block-title">More stories</div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-1.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
                     <a href="/trump-biden-super-predator-debate-1541565">
-                      Newsweek Announces Launch of the Newsweek Expert
-                      Forum</a>
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
                   </h3>
-                  <p class="card-text">
-                    Newsweek Expert Forum creates cohort of thought leaders,
-                    pioneering thinkers to share insights, expertise from
-                    range of professions, industries.
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
                   </p>
                 </div>
               </div>
-            </div>
 
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a href="/us">POLITICS</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/featured-stories-4.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-2.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
                     <a href="/trump-biden-super-predator-debate-1541565">
-                      Can Joe Biden Rescind Donald Trump's Pardons?</a>
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
                   </h3>
-                  <p class="card-text">
-                    The president did not issue pardons for himself, his
-                    children or for former New York Mayor Rudy Giuliani.
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
                   </p>
                 </div>
               </div>
-            </div>
 
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a href="/us">POLITICS</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/featured-stories-5.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-3.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
                     <a href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden Immigration Orders Upend Donald Trump's
-                      Legacy</a>
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
                   </h3>
-                  <p class="card-text">
-                    The Biden Administration will issue an order stopping
-                    construction of the border wall on its first day.
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-4.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-5.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-6.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-7.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-8.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-9.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-10.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-11.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/more-stories-12.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- END OF More Stories-->
+
+            <!-- START OF Latest News-->
+
+            <div class="container-fluid" id="latest-news">
+              <div class="block-title">Latest news</div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-1.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-2.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-3.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-4.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-5.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-6.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-7.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-8.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/latest-news-9.jpg"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                      U.S.-Mexico Border</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">
+                    The incoming president has not said what he plans to do with
+                    the tens of thousands of asylum-seekers living in limbo in
+                    crowded shelters and makeshift camps along the border.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- END OF Latest News-->
           </div>
 
-          <!-- Start of Sponsored Insights section-->
-          <div class="sponsored-insights-wrapper container-fluid">
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="#">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-1.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
+          <!-- END OF SECOND COLUMN -->
+
+          <!-- START OF THIRD COLUMN -->
+
+          <div class="the-debate third-col container-fluid col-12 col-lg-3">
+            <!-- START OF DEBATE-->
+            <div class="debate-wrapper">
+              <div class="block-title">The debate</div>
+
+              <div class="card-wrapper1 d-flex mb-4 pt-1">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-4.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Media Have Every Right to Cancel Trump</a
+                    >
                   </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
+                </div>
+              </div>
+
+              <div class="deco">
+                <div class="c-vs">VS</div>
+              </div>
+
+              <div class="card-wrapper2 d-flex mb-4">
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="#">
+                      After Parler Ban, Rein in Big Tech Now or Cease Being Free
+                      Citizens</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY RACHEL BOVARD</p>
+                </div>
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-8.png"
+                  data-holder-rendered="true"
+                />
+              </div>
+            </div>
+
+            <!-- END OF DEBATE-->
+
+            <!-- Start of Opinion section-->
+
+            <div class="opinion-wrapper container-fluid">
+              <div class="block-title">Opinion</div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-1.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Qete Media Have Every Right to Cancel Trump</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-2.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Qete Media Have Every Right to Cancel Trump</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-3.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Qete Media Have Every Right to Cancel Trump</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-5.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Qete Media Have Every Right to Cancel Trump</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-6.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Qete Media Have Every Right to Cancel Trump</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-7.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Qete Media Have Every Right to Cancel Trump</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
+                </div>
+              </div>
+
+              <div class="card-wrapper d-flex mb-4">
+                <img
+                  class="rounded-circle me-3"
+                  alt="63x63"
+                  src="asset/images/round-9.png"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body card-body-test d-block p-0 m-0 ml-2">
+                  <h3 class="stories-card-title">
+                    <a href="/trump-biden-super-predator-debate-1541565">
+                      Qete Media Have Every Right to Cancel Trump</a
+                    >
+                  </h3>
+                  <p class="stories-card-text">BY FROMA HARROP</p>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="/us">SPONSORED INSIGHT</a>
+            <!-- End of Opinion section-->
+
+            <!-- Start of Sponsored Insights section-->
+            <div class="sponsored-insights-wrapper container-fluid">
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="#"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-1.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
                   </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-2.jpg" alt="Card image cap" />
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
                   </div>
                 </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="/us"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-2.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="/us"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-3.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="/us"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/sponsored-insight-4.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        Joe Biden's First Executive Actions Undo Many of Donald
+                        Trump's</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      Actions related to the COVID-19 crisis, climate change and
+                      racial equality are to be among the first taken as he
+                      begins his tenure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="category">
+                  <div class="card">
+                    <div class="cate">
+                      <a id="spons-insights-intitle" href="/us"
+                        >SPONSORED INSIGHT</a
+                      >
+                    </div>
+                    <div class="image">
+                      <img
+                        class="card-img-top"
+                        src="asset/images/ranking-1.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>
+                      <a
+                        id="insight-card-title1"
+                        href="/trump-biden-super-predator-debate-1541565"
+                      >
+                        America's Most Responsible Companies 2021</a
+                      >
+                    </h3>
+                    <p class="insight-card-text">
+                      We partnered with Statista to rank the country's Most
+                      Responsible Companies. They share the values that we all
+                      prioritize, and that's worth recognizing in 2021
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="/us">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-3.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="/us">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-4.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <!-- END of Sponsored Insights section-->
           </div>
 
-          <!-- END of Sponsored Insights section-->
-
-          <!-- END OF Featured Stories-->
+          <!-- END OF THIRD COLUMN -->
         </div>
+        <!-- END OF ROW CONTAINER FOR THE 3 COLUMNS -->
 
-        <!-- END OF FIRST COLUMN -->
+        <!-- START OF In the Magazine -->
 
-        <!-- START OF SECOND COLUMN -->
+        <div class="in-magazine fourth-col container-fluid">
+          <!-- START OF In Magazine-->
+          <div class="row px-3 mb-2">
+            <div
+              class="in-magazine-title-wrapper d-flex align-items-center justify-content-center my-3"
+            >
+              <span class="in-magazine-title-logo"></span>
+              <div class="in-magazine-title">IN THE MAGAZINE</div>
+            </div>
 
-        <div class="top-story second-col col-12 col-md-7 col-lg-6">
-          <!-- START OF Top Story-->
-
-          <div class="block-title">Top story</div>
-          <div class="card">
-            <div class="category">
-              <div class="card">
-                <div class="cate">
-                  <a href="/us">POLITICS</a>
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="cate">
+                    <a href="/us">JANUARY 22 ISSUE</a>
+                  </div>
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-1.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
                 </div>
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/top-story.jpg" alt="Card image cap" />
+                <div class="card-body">
+                  <h3
+                    class="in-magazine-first-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"> SEE ALL FEATURES</a>
+                  </h3>
                 </div>
               </div>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Joe Biden's First Executive Actions Undo Many of Donald
-                    Trump's</a>
-                </h3>
-                <p class="card-text">
-                  Actions related to the COVID-19 crisis, climate change and
-                  racial equality are to be among the first taken as he begins
-                  his tenure.
-                </p>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-2.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-3.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-4.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-5.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-6.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-7.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-8.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- END OF Top Story-->
-
-          <!-- START OF My turn and Cult&Trav-->
-
-          <div class="container-fluid">
-            <row class="row">
-              <div class="block-title">My turn</div>
-              <div class="col-12 col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="asset/images/my-turn-1.jpg" alt="Card image cap" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      I Married My Best Friend to Avoid Inheritance Tax
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="asset/images/my-turn-2.jpg" alt="Card image cap" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      I've Rescued Hundreds of Special Needs Dogs
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="asset/images/my-turn-3.jpg" alt="Card image cap" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Why I Accepted Trump's Medal Of Arts
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </row>
-            <row class="row">
-              <div class="block-title">Culture and Travel</div>
-              <div class="col-12 col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="asset/images/cult-travel-1.jpg" alt="Card image cap" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      The Secrets to Happiness Around the World
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="asset/images/cult-travel-2.jpg" alt="Card image cap" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      Where We Are Dreaming of Traveling in 2021
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="asset/images/cult-travel-3.jpg" alt="Card image cap" />
-                  <div class="card-body">
-                    <p class="card-text">
-                      These Are the Top 100 Songs of 2020
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </row>
-          </div>
-
-          <!-- END OF My turn and Cult&Trav-->
-
-          <!-- START OF More Stories-->
-
-          <div class="container-fluid" id="more-stories">
-            <div class="block-title">More stories</div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-1.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-2.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-3.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-4.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-5.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-6.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-7.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-8.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-9.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-10.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-11.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/more-stories-12.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- END OF More Stories-->
-
-          <!-- START OF Latest News-->
-
-          <div class="container-fluid" id="latest-news">
-            <div class="block-title">Latest news</div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-1.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-2.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-3.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-4.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-5.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-6.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-7.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-8.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/latest-news-9.jpg" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Biden's Biggest Challenge? 67,000 Migrants Stranded at
-                    U.S.-Mexico Border</a>
-                </h3>
-                <p class="stories-card-text">
-                  The incoming president has not said what he plans to do with
-                  the tens of thousands of asylum-seekers living in limbo in
-                  crowded shelters and makeshift camps along the border.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- END OF Latest News-->
+          <!-- END OF ROW CONTAINER FOR in magazine -->
         </div>
+        <!-- END OF In the Magazine -->
 
-        <!-- END OF SECOND COLUMN -->
+        <!-- START OF In Editor's Pick -->
 
-        <!-- START OF THIRD COLUMN -->
+        <div class="in-magazine fourth-col container-fluid">
+          <!-- START OF In Magazine-->
+          <div class="row px-3 mb-2">
+            <div
+              class="in-magazine-title-wrapper d-flex align-items-center justify-content-center my-3"
+            >
+              <span class="in-magazine-title-logo"></span>
+              <div class="in-magazine-title">IN THE MAGAZINE</div>
+            </div>
 
-        <div class="the-debate third-col container-fluid col-12 col-lg-3">
-          <!-- START OF DEBATE-->
-          <div class="debate-wrapper">
-            <div class="block-title">The debate</div>
-
-            <div class="card-wrapper1 d-flex mb-4 pt-1">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-4.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
+            <div class="card col-12 col-md-6 col-lg-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="cate">
+                    <a href="/us">JANUARY 22 ISSUE</a>
+                  </div>
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/editors-picks-1.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3
+                    class="in-magazine-first-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"> SEE ALL FEATURES</a>
+                  </h3>
+                </div>
               </div>
             </div>
 
-            <div class="deco">
-              <div class="c-vs">VS</div>
+            <div class="card col-12 col-md-6 col-lg-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-2.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div class="card-wrapper2 d-flex mb-4">
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="#">
-                    After Parler Ban, Rein in Big Tech Now or Cease Being Free
-                    Citizens</a>
-                </h3>
-                <p class="stories-card-text">BY RACHEL BOVARD</p>
+            <div class="card col-12 col-md-6 col-lg-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-3.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
               </div>
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-8.png" data-holder-rendered="true" />
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-4.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-5.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-6.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-7.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-12 col-md-3 border-0">
+              <div class="category">
+                <div class="card">
+                  <div class="image">
+                    <img
+                      class="card-img-top"
+                      src="asset/images/in-magaz-8.jpg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="im-magazine-red-titles d-flex justify-content-start mb-3"
+                  >
+                    <a class="bg-danger text-white me-3 px-1" href="/us"
+                      >COVER</a
+                    >
+                    <a class="text-danger" href="/us">NEWS</a>
+                  </div>
+                  <h3
+                    class="in-magazine-card-title d-flex justify-content-center"
+                  >
+                    <a href="#"
+                      >FBI, DHS, White House Advisers Foresaw Possible Riots,
+                      Looked the Other Way</a
+                    >
+                  </h3>
+                </div>
+              </div>
             </div>
           </div>
-
-          <!-- END OF DEBATE-->
-
-          <!-- Start of Opinion section-->
-
-          <div class="opinion-wrapper container-fluid">
-            <div class="block-title">Opinion</div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-1.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Qete Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-2.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Qete Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-3.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Qete Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-5.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Qete Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-6.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Qete Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-7.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Qete Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
-              </div>
-            </div>
-
-            <div class="card-wrapper d-flex mb-4">
-              <img class="rounded-circle me-3" alt="63x63" src="asset/images/round-9.png" data-holder-rendered="true" />
-              <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-                <h3 class="stories-card-title">
-                  <a href="/trump-biden-super-predator-debate-1541565">
-                    Qete Media Have Every Right to Cancel Trump</a>
-                </h3>
-                <p class="stories-card-text">BY FROMA HARROP</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- End of Opinion section-->
-
-          <!-- Start of Sponsored Insights section-->
-          <div class="sponsored-insights-wrapper container-fluid">
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="#">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-1.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="/us">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-2.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="/us">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-3.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="/us">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/sponsored-insight-4.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      Joe Biden's First Executive Actions Undo Many of Donald
-                      Trump's</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    Actions related to the COVID-19 crisis, climate change and
-                    racial equality are to be among the first taken as he
-                    begins his tenure.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="category">
-                <div class="card">
-                  <div class="cate">
-                    <a id="spons-insights-intitle" href="/us">SPONSORED INSIGHT</a>
-                  </div>
-                  <div class="image">
-                    <img class="card-img-top" src="asset/images/ranking-1.jpg" alt="Card image cap" />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h3>
-                    <a id="insight-card-title1" href="/trump-biden-super-predator-debate-1541565">
-                      America's Most Responsible Companies 2021</a>
-                  </h3>
-                  <p class="insight-card-text">
-                    We partnered with Statista to rank the country's Most
-                    Responsible Companies. They share the values that we all
-                    prioritize, and that's worth recognizing in 2021
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- END of Sponsored Insights section-->
+          <!-- END OF ROW CONTAINER FOR in editor pick -->
         </div>
-
-        <!-- END OF THIRD COLUMN -->
-
-
-
-
-      </div> <!-- END OF ROW CONTAINER FOR THE 3 COLUMNS -->
-
-
-      <!-- START OF In the Magazine -->
-
-      <div class="in-magazine fourth-col container-fluid">
-        <!-- START OF In Magazine-->
-        <div class="row px-3 mb-2">
-
-          <div class="in-magazine-title-wrapper d-flex align-items-center justify-content-center my-3">
-            <span class="in-magazine-title-logo"></span>
-            <div class="in-magazine-title">IN THE MAGAZINE</div>
-          </div>
-
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="cate">
-                  <a href="/us">JANUARY 22 ISSUE</a>
-                </div>
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-1.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <h3 class="in-magazine-first-card-title d-flex justify-content-center">
-                  <a href="#">
-                    SEE ALL FEATURES</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-2.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="im-magazine-red-titles d-flex justify-content-start mb-3">
-                  <a class="bg-danger text-white me-3 px-1" href="/us">COVER</a>
-                  <a class="text-danger" href="/us">NEWS</a>
-                </div>
-                <h3 class="in-magazine-card-title d-flex justify-content-center">
-                  <a href="#">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-3.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="im-magazine-red-titles d-flex justify-content-start mb-3">
-                  <a class="bg-danger text-white me-3 px-1" href="/us">COVER</a>
-                  <a class="text-danger" href="/us">NEWS</a>
-                </div>
-                <h3 class="in-magazine-card-title d-flex justify-content-center">
-                  <a href="#">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-4.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="im-magazine-red-titles d-flex justify-content-start mb-3">
-                  <a class="bg-danger text-white me-3 px-1" href="/us">COVER</a>
-                  <a class="text-danger" href="/us">NEWS</a>
-                </div>
-                <h3 class="in-magazine-card-title d-flex justify-content-center">
-                  <a href="#">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-5.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="im-magazine-red-titles d-flex justify-content-start mb-3">
-                  <a class="bg-danger text-white me-3 px-1" href="/us">COVER</a>
-                  <a class="text-danger" href="/us">NEWS</a>
-                </div>
-                <h3 class="in-magazine-card-title d-flex justify-content-center">
-                  <a href="#">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-6.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="im-magazine-red-titles d-flex justify-content-start mb-3">
-                  <a class="bg-danger text-white me-3 px-1" href="/us">COVER</a>
-                  <a class="text-danger" href="/us">NEWS</a>
-                </div>
-                <h3 class="in-magazine-card-title d-flex justify-content-center">
-                  <a href="#">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-7.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="im-magazine-red-titles d-flex justify-content-start mb-3">
-                  <a class="bg-danger text-white me-3 px-1" href="/us">COVER</a>
-                  <a class="text-danger" href="/us">NEWS</a>
-                </div>
-                <h3 class="in-magazine-card-title d-flex justify-content-center">
-                  <a href="#">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="card col-12 col-md-3 border-0">
-            <div class="category">
-              <div class="card">
-                <div class="image">
-                  <img class="card-img-top" src="asset/images/in-magaz-8.jpg" alt="Card image cap" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="im-magazine-red-titles d-flex justify-content-start mb-3">
-                  <a class="bg-danger text-white me-3 px-1" href="/us">COVER</a>
-                  <a class="text-danger" href="/us">NEWS</a>
-                </div>
-                <h3 class="in-magazine-card-title d-flex justify-content-center">
-                  <a href="#">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div> <!-- END OF ROW CONTAINER FOR in magazine -->
-      </div> <!-- END OF In the Magazine -->
-
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="d-block d-md-flex justify-content-between align-items-baseline mb-2">
-      <div class="d-block d-md-flex align-items-baseline">
-        <svg class="st0 footer-logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60" <g>
-          <path>
-            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2
-            L58.7,10.8L58.7,10.8z
-            M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11
-            c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38
-            M159,27.3h-3.7
-            l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6
-            H159L159,27.3L159,27.3z
-            M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13
-            c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8
-            c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2
-            C175.8,24.8,174.5,26.1,174.5,27.8
-            M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7
-            h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z
-            M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4
-            c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1
-            c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9
-            M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6
-            c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6
-            C338,16.1,343.9,25.4,343.9,37.8
-            M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5
-            h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z
-            M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9
-            c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2
-            c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9
-            C395.5,55.8,395.6,56.2,395.6,56.6
-            M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6
-            c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58
-            M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1
-            c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6
-            v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8
-            M393.5,56.3
-            c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3
-            M318.4,33.5
-            h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5
-            M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6
-            M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
-          </path>
-        </svg>
-
-        <p class="copyright mt-3 ms-3">© 2021 NEWSWEEK DIGITAL LLC</p>
+        <!-- END OF In Editor's Pick -->
       </div>
-      <div class="upper-footer-social-media d-inline d-md-flex align-items-end justify-content-md-end">
-        <i class="fab fa-facebook-square social-icons-footer"></i>
-        <i class="fab fa-twitter social-icons-footer"></i>
-        <i class="fab fa-instagram social-icons-footer"></i>
-        <i class="fab fa-tumblr social-icons-footer"></i>
-        <i class="fab fa-linkedin-in social-icons-footer"></i>
-      </div>
-    </div>
-    <div class="lower-footer pt-2">
-      <div class="w-100 d-flex align-items-baseline">
-        <p>Editions:</p>
-        <div class="footer-languages w-100 d-flex">
-          <a href="#">U.S. Edition</a>
-          <a href="#">日本</a>
-          <a href="#">Pakistan</a>
-          <a href="#">Polska</a>
-          <a id="last-language" href="#">România</a>
+    </main>
+
+    <footer>
+      <div
+        class="d-block d-md-flex justify-content-between align-items-baseline mb-2"
+      >
+        <div class="d-block d-md-flex align-items-baseline">
+          <svg
+            class="st0 footer-logo-svg"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 395.6 60"
+            style="enable-background: new 0 0 395.6 60"
+            <g
+          >
+            <path>
+              d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2
+              L58.7,10.8L58.7,10.8z
+              M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11
+              c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38
+              M159,27.3h-3.7
+              l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6
+              H159L159,27.3L159,27.3z
+              M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13
+              c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8
+              c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2
+              C175.8,24.8,174.5,26.1,174.5,27.8
+              M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7
+              h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z
+              M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4
+              c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1
+              c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9
+              M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6
+              c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6
+              C338,16.1,343.9,25.4,343.9,37.8
+              M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5
+              h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z
+              M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9
+              c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2
+              c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9
+              C395.5,55.8,395.6,56.2,395.6,56.6
+              M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6
+              c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58
+              M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1
+              c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6
+              v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8
+              M393.5,56.3
+              c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3
+              M318.4,33.5
+              h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5
+              M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6
+              M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+            </path>
+          </svg>
+
+          <p class="copyright mt-3 ms-3">© 2021 NEWSWEEK DIGITAL LLC</p>
+        </div>
+        <div
+          class="upper-footer-social-media d-inline d-md-flex align-items-end justify-content-md-end"
+        >
+          <i class="fab fa-facebook-square social-icons-footer"></i>
+          <i class="fab fa-twitter social-icons-footer"></i>
+          <i class="fab fa-instagram social-icons-footer"></i>
+          <i class="fab fa-tumblr social-icons-footer"></i>
+          <i class="fab fa-linkedin-in social-icons-footer"></i>
         </div>
       </div>
-      <div class="company-links">
-        <a href="#" class="comp-link">About Us</a>
-        <a href="#" class="comp-link">Corrections</a>
-        <a href="#" class="comp-link"> Contact Us</a>
-        <a href="#" class="comp-link">Editorial Guidelines</a>
-        <a href="#" class="comp-link">Advertise</a>
-        <a href="#" class="comp-link">Copyright</a>
-        <a href="#" class="comp-link">Terms & Conditions</a>
-        <a href="#" class="comp-link">Privacy Policy</a>
-        <a href="#" class="comp-link">Cookie Policy</a>
-        <a href="#" class="comp-link">Terms of Sale</a>
-        <a href="#" class="comp-link">Archive</a>
-        <a href="#" class="comp-link">Announcements</a>
+      <div class="lower-footer pt-2">
+        <div class="w-100 d-flex align-items-baseline">
+          <p>Editions:</p>
+          <div class="footer-languages w-100 d-flex">
+            <a href="#">U.S. Edition</a>
+            <a href="#">日本</a>
+            <a href="#">Pakistan</a>
+            <a href="#">Polska</a>
+            <a id="last-language" href="#">România</a>
+          </div>
+        </div>
+        <div class="company-links">
+          <a href="#" class="comp-link">About Us</a>
+          <a href="#" class="comp-link">Corrections</a>
+          <a href="#" class="comp-link"> Contact Us</a>
+          <a href="#" class="comp-link">Editorial Guidelines</a>
+          <a href="#" class="comp-link">Advertise</a>
+          <a href="#" class="comp-link">Copyright</a>
+          <a href="#" class="comp-link">Terms & Conditions</a>
+          <a href="#" class="comp-link">Privacy Policy</a>
+          <a href="#" class="comp-link">Cookie Policy</a>
+          <a href="#" class="comp-link">Terms of Sale</a>
+          <a href="#" class="comp-link">Archive</a>
+          <a href="#" class="comp-link">Announcements</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
-</body>
-
+  </body>
 </html>
