@@ -386,8 +386,7 @@ div {
 .in-magazine-title-logo {
   width: 29px;
   height: 28px;
-  background: url(../../asset/images/newsweek-inline-little-logo.svg)
-    center/contain no-repeat #f72210;
+  background: url(../../asset/images/newsweek-inline-little-logo.svg) center/contain no-repeat #f72210;
   margin-right: 10px;
 }
 
@@ -409,6 +408,17 @@ div {
   padding: 20px;
 }
 
+.free-signup .form-submit {
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background: url(https://web.archive.org/web/20210120130223im_/https://g.newsweek.com/www/images/free-sign-up.svg) center/108px no-repeat #f61602;
+  border-radius: 3px;
+}
+
 .newsletter-signup .free-signup .form-submit {
   margin-top: 8px;
 }
@@ -417,18 +427,6 @@ div {
   width: 100%;
   height: 32px;
   line-height: 32px;
-}
-
-.free-signup .form-submit {
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  background: url(https://web.archive.org/web/20210120130223im_/https://g.newsweek.com/www/images/free-sign-up.svg)
-    center/108px no-repeat #f61602;
-  border-radius: 3px;
 }
 
 input[type="submit" i] {
