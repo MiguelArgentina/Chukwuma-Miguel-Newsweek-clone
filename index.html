@@ -1984,14 +1984,14 @@
       <!-- END OF Newspapers sections Newsweek Expert Forum-->
 
       <!-- START OF Newspapers sections  Subscribe / Newsletter -->
-      <div class="newp-sect-newsw-exp-forum container-fluid">
+      <div class="newp-sect-subs-newsletter container-fluid">
         <div class="row px-3 mb-2 pt-3 border-top">
-
+          <div class="subscribe-main-wrapper d-block col-12 col-lg-7 container-fluid">
           <div class="in-magazine-title text-danger pb-3"> Subscribe</div>
-          <div class="subscribe-wrapper d-flex flex-column flex-md-row justify-content-center align-items-center col-12 col-md-8 container-fluid">
-            <div class="subscribe-images-wrapper ms-2">
-              <!-- <img class="subscribe-img" src="asset/images/subscribe-curr.jpg" alt=""> -->
-              <img class="subscribe-img" src="asset/images/subscribe-prev.jpg" alt="">
+          <div class="subscribe-wrapper d-flex flex-column flex-md-row justify-content-center align-items-center container-fluid">
+            <div id="img-container" class="subscribe-images-wrapper position-relative mb-3 ms-2">
+              <img id="img-curr" class="subscribe-img" src="asset/images/subscribe-prev.jpg" alt="">
+              <img id="img-prev" class="subscribe-img position-absolute" src="asset/images/subscribe-curr.jpg" alt="">
             </div>
             <div class="subscribe-text d-flex flex-column justify-content-center align-items-center mt-1 me-2">
               <h4 class="in-magazine-first-card-title d-flex flex-wrap justify-content-center text-center">
@@ -2001,36 +2001,31 @@
               <button type="button" class="btn btn-danger">SUBSCRIBE</button>
             </div>
           </div>
-        </div>
+          </div>
         <!-- END OF Subscribe wrapper-->
 
-        <div class="newsletter-wrapper d-block col-12 col-lg-4 container-fluid">
+        <div class="newsletter-wrapper d-block col-12 col-lg-5 container-fluid">
           <div class="in-magazine-title text-danger pb-3">Newsletter</div>
 
-          <div class="card-wrapper d-flex mb-4">
-            <img class="side-news-img me-3 mh-100" alt="image" src="asset/images/world-little-3.webp" data-holder-rendered="true" />
+          <div class="card-wrapper container-fluid d-block d-lg-flex mb-4">
+            <div class="newsletter-img me-3"></div>
             <div class="card-body card-body-test d-block p-0 m-0 ml-2">
-              <h3 class="stories-card-title">
-                Video of Police Dog Arlo Going Home After Shooting Viewed 41
-                Million Times
-              </h3>
-              <form>
+              <h3 class="newsletter-h3 text-center mt-4 text-bold"><strong>The starting 5</strong></h3>
+              <p class="newsletter-p text-center">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+              <form class="d-flex d-lg-block">
                 <div class="mb-3">
-                  <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1" />
+                  <input type="email" class="form-control newsletter-input" placeholder="Email address" id="exampleInputEmail1" />
                 </div>
 
-                <button type="submit" class="btn btn-danger btn-lg">
-                  FREE SIGN UP>
-                </button>
+                <button type="submit" id="newsletter-btn" class="btn btn-danger btn-lg newsletter-btn">FREE SIGN UP></button>
               </form>
             </div>
           </div>
         </div>
         <!-- END OF Newsletter wrapper-->
-      </div>
-      <!-- END OF ROW CONTAINER-->
-    </div>
-    <!-- END OF Newspapers sections Subscribe / Newsletter-->
+        </div>
+      </div> <!-- END OF ROW CONTAINER-->
+    </div> <!-- END OF Newspapers sections Subscribe / Newsletter-->
 
     <!-- END OF Newspapers sections -->
     </div>

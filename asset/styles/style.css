@@ -456,6 +456,60 @@ input[type="submit" i] {
   flex-basis: 60%;
 }
 
+#img-container::after {
+  clear: both;
+}
+
+#img-prev {
+  top: 10px;
+  left: 80px;
+}
+
 .subscribe-text {
   flex-basis: 40%;
+}
+
+.newsletter-img {
+  height: 180px;
+  border: 1px solid green;
+  background: url(../../asset/images/newsletter.png) center center / cover no-repeat;
+}
+
+@media only screen and (min-width: 992px) {
+  .newsletter-img {
+    height: 300px;
+    width: 300px;
+    max-width: 340px;
+  }
+}
+
+.newsletter-h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+
+.newsletter-p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.newsletter-btn,
+.newsletter-input {
+  height: 40px;
+}
+
+.newsletter-input {
+  color: #555;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+.newsletter-btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#newsletter-btn {
+  color: white;
 }
