@@ -1,2 +1,5 @@
 # .gitignore
 node_modules/
+
+.DS_Store
+asset/.DS_Store
