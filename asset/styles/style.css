@@ -1,7 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
 footer {
   margin-left: 2%;
   margin-right: 2%;
@@ -38,12 +34,6 @@ body {
 }
 
 .btn-header {
-  /* border-radius: 24px;
-  height: 25px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 800;
-  text-align: center; */
   background-color: #ffe400;
   color: black;
   border-radius: 24px;
@@ -291,11 +281,6 @@ div {
   z-index: 1;
 }
 
-/* .card img-top {
-  width: 350px;
-  height: 265px;
-} */
-
 .card-body p {
   color: #4e4c4c;
   margin-bottom: 20px;
@@ -372,7 +357,6 @@ div {
 
 #spons-insights-intitle {
   font: bold 17px/16px "Roboto Condensed", sans-serif;
-  color: #3581f4;
 }
 
 #insight-card-title1 {
@@ -510,10 +494,5 @@ input[type="submit" i] {
 
 .newsletter-btn {
   cursor: pointer;
-  font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
-}
-
-#newsletter-btn {
-  color: white;
 }
