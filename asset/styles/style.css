@@ -8,6 +8,10 @@ footer {
   overflow-x: hidden;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header-logo {
   height: 50px;
 }
@@ -386,7 +390,8 @@ div {
 .in-magazine-title-logo {
   width: 29px;
   height: 28px;
-  background: url(../../asset/images/newsweek-inline-little-logo.svg) center/contain no-repeat #f72210;
+  background: url(../../asset/images/newsweek-inline-little-logo.svg)
+    center/contain no-repeat #f72210;
   margin-right: 10px;
 }
 
@@ -415,7 +420,8 @@ div {
   font-weight: bold;
   font-size: 0;
   font-family: "Roboto Condensed", sans-serif;
-  background: url(https://web.archive.org/web/20210120130223im_/https://g.newsweek.com/www/images/free-sign-up.svg) center/108px no-repeat #f61602;
+  background: url(https://web.archive.org/web/20210120130223im_/https://g.newsweek.com/www/images/free-sign-up.svg)
+    center/108px no-repeat #f61602;
   border-radius: 3px;
 }
 
@@ -472,7 +478,8 @@ input[type="submit" i] {
 .newsletter-img {
   height: 180px;
   border: 1px solid green;
-  background: url(../../asset/images/newsletter.png) center center / cover no-repeat;
+  background: url(../../asset/images/newsletter.png) center center / cover
+    no-repeat;
 }
 
 @media only screen and (min-width: 992px) {
