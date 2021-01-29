@@ -8,12 +8,17 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-logo {
   height: 50px;
 }
 
 .header-logo-lg {
   height: 60px;
+  background-color: transparent;
 }
 
 .date-text {
@@ -22,12 +27,12 @@ body {
 }
 
 .header-main-container {
-  background-color: #f72210;
+  background-color: #ff0500;
 }
 
 .login-text,
-#header-user-icon,
-#header-menu-bars {
+.header-user-icon,
+.header-menu-bars {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -64,7 +69,7 @@ body {
   border-right: 1px solid #dedede;
 }
 
-#search-text-link {
+.search-text-link {
   color: #333;
   font-size: 14px;
   font-weight: normal;
@@ -76,18 +81,14 @@ body {
   height: 95px;
 }
 
-#search-text-icon {
+.search-text-icon {
   color: #333;
   font-weight: normal;
   border-right: none;
 }
 
-#first-upper-link {
+.first-upper-link {
   margin-left: 3%;
-}
-
-#last-upper-link {
-  margin-right: 2%;
 }
 
 .lower-link {
@@ -100,18 +101,9 @@ body {
   padding-right: 1%;
 }
 
-.fake-body {
-  height: 50vh;
-}
-
-#image-test {
-  width: 95px;
-  height: 95px;
-}
-
-#image-test2 {
-  width: 95px;
-  height: 95px;
+.article-link-title {
+  font: bold 16px/19px "Roboto Condensed", sans-serif;
+  color: rgba(3, 3, 3, 0.5);
 }
 
 .stories-card-title {
@@ -170,13 +162,14 @@ body {
 
 .upper-footer-social-media i {
   margin-right: 3%;
+  color: #666;
 }
 
 .lower-footer {
   border-top: 1px solid #dedede;
 }
 
-#last-language {
+.last-language {
   border-left: 0;
 }
 
@@ -355,11 +348,7 @@ div {
   right: 0;
 }
 
-#spons-insights-intitle {
-  font: bold 17px/16px "Roboto Condensed", sans-serif;
-}
-
-#insight-card-title1 {
+.insight-card-title1 {
   font-size: 20px;
   line-height: 20px;
 }
@@ -453,6 +442,10 @@ input[type="submit" i] {
   left: 80px;
 }
 
+.subscribe-wrapper {
+  background-color: #f4f5f6;
+}
+
 .subscribe-text {
   flex-basis: 40%;
 }
@@ -492,7 +485,25 @@ input[type="submit" i] {
   font-family: Helvetica, sans-serif;
 }
 
-.newsletter-btn {
+#subscribe-btn {
+  position: relative;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  cursor: pointer;
+  background-color: #f72310;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 10px 10px 12px;
+  border-radius: 3px;
+}
+
+#newsletter-btn {
   cursor: pointer;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: #f61602;
+  border-color: #f61602;
+}
+
+.text-danger-text {
+  color: #f72310;
 }
